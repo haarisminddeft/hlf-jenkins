@@ -14,7 +14,7 @@ pipeline {
 
     stage('Create Kind Cluster') {
       steps {
-        sh 'cd dev/hlf-operator/new'
+        sh 'mkdir hlf-operator && cd hlf-operator'
         sh 'echo \'Hello world\''
       }
     }

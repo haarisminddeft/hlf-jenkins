@@ -12,5 +12,12 @@ pipeline {
       }
     }
 
+    stage('Create Kind Cluster') {
+      steps {
+        sh 'cd dev/hlf-operator/new'
+        sh 'echo \'Hello world\''
+      }
+    }
+
   }
 }

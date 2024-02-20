@@ -20,7 +20,7 @@ pipeline {
         def dirname = 'hlf-operator'
         def directory = new File(dirname)
         
-        if(directory.isExists() && directory.isDirectory()){
+        if(directory.exists() && directory.isDirectory()){
           directory.deleteDir()
           echo '$dirname existed and is deleted'
         }
